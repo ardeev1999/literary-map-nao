@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+.title-overlay {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.title-overlay h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+/* Стили для всплывающих окон */
+.author-popup {
+    min-width: 220px;
+    text-align: center;
+}
+
+.author-popup h3 {
+    margin: 0 0 8px 0;
+    color: #1e4660;
+}
+
+.author-popup p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.author-popup a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    background-color: #2c7da0;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.author-popup a:hover {
+    background-color: #1e5f7a;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    pointer-events: auto;
+}
+
+.back-button:hover {
+    background: #f0f0f0;
+}
+
+.region-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    margin: 0;
+    pointer-events: none;
+}
+
+#region-map {
+    height: 100vh;
+    width: 100%;
+}
+
+.city-link-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: white;
+    padding: 8px 18px;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-decoration: none;
+    color: #1e4660;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid #ff7800;
+    transition: all 0.2s ease;
+    pointer-events: auto;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.city-link-button:hover {
+    background: #ff7800;
+    color: white;
+    box-shadow: 0 6px 14px rgba(255, 120, 0, 0.3);
+    transform: scale(1.02);
+}

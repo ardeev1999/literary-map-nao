@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автор - Литературная карта НАО</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .author-page {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .author-page img {
+            max-width: 200px;
+            border-radius: 8px;
+            margin-right: 20px;
+            float: left;
+        }
+        .author-page h1 {
+            margin-top: 0;
+            color: #1e4660;
+        }
+        .author-page .bio {
+            line-height: 1.6;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #2c7da0;
+        }
+        .error-message {
+            color: red;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="author-page">
+        <a href="javascript:history.back()" class="back-link">← Назад</a>
+        <div id="author-content" class="clearfix">
+            <!-- Контент будет вставлен через JavaScript -->
+        </div>
+    </div>
+
+    <script src="js/authors-data.js"></script>
+    <script>
+        (function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const authorId = urlParams.get('id');
+            const contentDiv = document.getElementById('author-content');
+
+            if (!authorId) {
+                contentDiv.innerHTML = '<p class="error-message">Автор не указан.</p>';
+                return;
+            }
+
+            const author = window.authorsData.find(a => a.id === authorId);
+            if (!author) {
+                contentDiv.innerHTML = '<p class="error-message">Автор не найден.</p>';
+                return;
+            }
+
+            // Формируем HTML
+            const photoPath = author.photo ? `assets/img/authors/${author.photo}` : '';
+            const photoHtml = photoPath 
+                ? `<img src="${photoPath}" alt="${author.name}" onerror="this.style.display='none'">` 
+                : '';
+
+            const bioHtml = author.fullBio || '<p>Информация дополняется.</p>';
+
+            contentDiv.innerHTML = `
+                ${photoHtml}
+                <h1>${author.name}</h1>
+                <div class="bio">${bioHtml}</div>
+            `;
+            document.title = `${author.name} - Литературная карта НАО`;
+        })();
+    </script>
+</body>
+</html>

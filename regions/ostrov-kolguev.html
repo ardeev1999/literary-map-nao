@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Остров Колгуев - Литературная карта НАО</title>
+    <!-- Стили -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <a href="../index.html" class="back-button">← Назад к карте НАО</a>
+    <a href="naryan-mar.html" class="city-link-button">🏙️ Нарьян-Мар</a>
+    <h1 class="region-title">Остров Колгуев</h1>
+    <div id="region-map"></div>
+
+    <!-- Сначала Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Затем MarkerCluster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+    <!-- Затем ваши данные и скрипт -->
+    <script src="../js/authors-data.js"></script>
+    <script src="../js/region-map.js"></script>
+    
+    <!-- Вызов инициализации -->
+    <script>
+        // Ждём полной загрузки DOM, чтобы убедиться, что все скрипты выполнены
+        document.addEventListener('DOMContentLoaded', function() {
+            initRegionMap('ostrov-kolguev');
+        });
+    </script>
+</body>
+</html>

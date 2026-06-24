@@ -20,15 +20,15 @@ attributionControl.addAttribution('© <a href="https://www.openstreetmap.org/cop
 
 // Словарь соответствия названий из GeoJSON -> имя файла (без .html)
 const zoneFileMap = {
-    'kolguyev_island': 'ostrov-kolguev',
-    'kanin_pol': 'poluostrov-kanin',
-    'kaninskaya_tundra': 'kaninskaya-tundra',
-    'timan_tundra': 'timanskaya-tundra',
-    'malozemel_tundra': 'malozemelskaya-tundra',
-    'bolshaya_nundra': 'bolshezemelskaya-tundra',
-    'ugorskiy_pol': 'yugorskiy-poluostrov',
-    'vaygach_island': 'ostrov-vaygach',
-    'naryan_mar': 'naryan-mar' 
+    'Остров Колгуев': 'ostrov-kolguev',
+    'Полуостров Канин': 'poluostrov-kanin',
+    'Канинская тундра': 'kaninskaya-tundra',
+    'Тиманская тундра': 'timanskaya-tundra',
+    'Малоземельская тундра': 'malozemelskaya-tundra',
+    'Большеземельская тундра': 'bolshezemelskaya-tundra',
+    'Югорский полюсторов': 'yugorskiy-poluostrov',
+    'Остров Вайгач': 'ostrov-vaygach',
+    'Нарьян-Мар': 'naryan-mar' 
 };
 
 // Загружаем и отображаем зоны тундры

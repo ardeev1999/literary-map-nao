@@ -15,15 +15,15 @@ const regionSettings = {
 
 // 2. Словарь соответствия «regionId → имя в GeoJSON» (обратный тому, что в main-map.js)
 const zoneNameMap = {
-    'bolshezemelskaya': 'bolshaya_nundra',
-    'malozemelskaya': 'malozemel_tundra',
-    'kaninskaya': 'kaninskaya_tundra',
-    'timanskaya': 'timan_tundra',
-    'poluostrov-kanin': 'kanin_pol',
-    'yugorskiy-poluostrov': 'ugorskiy_pol',
-    'ostrov-vaygach': 'vaygach_island',
-    'ostrov-kolguev': 'kolguyev_island',
-    'naryan-mar': 'naryan_mar'    
+    'bolshezemelskaya': 'Большеземельская тундра',
+    'malozemelskaya': 'Малоземельская тундра',
+    'kaninskaya': 'Канинская тундра',
+    'timanskaya': 'Тиманская тундра',
+    'poluostrov-kanin': 'Полуостров Канин',
+    'yugorskiy-poluostrov': 'Югорский полюсторов',
+    'ostrov-vaygach': 'Остров Вайгач',
+    'ostrov-kolguev': 'Остров Колгуев',
+    'naryan-mar': 'Нарьян-Мар'    
 };
 
 function initRegionMap(regionId) {

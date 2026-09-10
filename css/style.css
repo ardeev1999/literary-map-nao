@@ -99,6 +99,30 @@ body {
     width: 100%;
 }
 
+/* Постоянные справочные подписи, без ссылок и всплывающих карточек. */
+.leaflet-tooltip.settlement-label {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    color: #243e50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff,
+                 -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 3px #fff;
+    pointer-events: none;
+    user-select: none;
+}
+
+.leaflet-tooltip.settlement-label::before {
+    display: none;
+}
+
 .city-link-button {
     position: absolute;
     top: 20px;

@@ -49,6 +49,9 @@ function initRegionMap(regionId) {
     // Добавляем маркеры авторов
     addAuthorsToMap(map, regionId);
 
+    // Справочный слой населённых пунктов (кроме страницы Нарьян-Мара).
+    addSettlementsToMap(map, regionId);
+
     // Загружаем GeoJSON и подсвечиваем нужную зону
     fetch('../data/nao-zones.geojson')
         .then(response => response.json())
@@ -78,6 +81,57 @@ function initRegionMap(regionId) {
             }
         })
         .catch(error => console.error('Ошибка загрузки GeoJSON:', error));
+}
+
+async function addSettlementsToMap(map, regionId) {
+    if (regionId === 'naryan-mar') return;
+
+    try {
+        const response = await fetch('../data/settlements.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+
+        // Выше границ зон, но ниже интерактивных маркеров авторов.
+        // События проходят сквозь точки и подписи к самой карте.
+        const pane = map.createPane('settlements');
+        pane.style.zIndex = '450';
+        pane.style.pointerEvents = 'none';
+
+        // Разносим подписи соседних деревень по разные стороны точек.
+        const leftLabels = new Set([
+            'Андег', 'Великовисочное', 'Каменка', 'Макарово',
+            'Нельмин-Нос', 'Оксино', 'Хонгурей', 'Щелино'
+        ]);
+
+        // Все 42 пункта доступны при перемещении карты, в том числе
+        // у границ зон. Их координаты не меняют начальный fitBounds.
+        data.settlements.forEach(settlement => {
+            const label = document.createElement('span');
+            label.textContent = settlement.name;
+            const direction = leftLabels.has(settlement.name) ? 'left' : 'right';
+
+            L.circleMarker([settlement.lat, settlement.lng], {
+                pane: 'settlements',
+                radius: 4,
+                color: '#ffffff',
+                weight: 1.5,
+                opacity: 1,
+                fillColor: '#243e50',
+                fillOpacity: 1,
+                interactive: false
+            }).addTo(map).bindTooltip(label, {
+                pane: 'settlements',
+                permanent: true,
+                interactive: false,
+                direction,
+                offset: [direction === 'left' ? -6 : 6, 0],
+                opacity: 1,
+                className: 'settlement-label'
+            });
+        });
+    } catch (error) {
+        console.error('Ошибка загрузки населённых пунктов:', error);
+    }
 }
 
 function addAuthorsToMap(map, regionId) {

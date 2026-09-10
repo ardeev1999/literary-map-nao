@@ -1,0 +1,258 @@
+{
+  "source": "https://ru.wikipedia.org/wiki/Населённые_пункты_Ненецкого_автономного_округа",
+  "coordinateSystem": "WGS84",
+  "settlements": [
+    {
+      "name": "Амдерма",
+      "lat": 69.756111,
+      "lng": 61.666667,
+      "source": "https://ru.wikipedia.org/wiki/Амдерма"
+    },
+    {
+      "name": "Андег",
+      "lat": 67.891111,
+      "lng": 53.216667,
+      "source": "https://ru.wikipedia.org/wiki/Андег"
+    },
+    {
+      "name": "Белушье",
+      "lat": 66.890556,
+      "lng": 47.613333,
+      "source": "https://ru.wikipedia.org/wiki/Белушье"
+    },
+    {
+      "name": "Бугрино",
+      "lat": 68.782778,
+      "lng": 49.303611,
+      "source": "https://ru.wikipedia.org/wiki/Бугрино_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Варнек",
+      "lat": 69.715278,
+      "lng": 60.06,
+      "source": "https://ru.wikipedia.org/wiki/Варнек_(посёлок)"
+    },
+    {
+      "name": "Великовисочное",
+      "lat": 67.253889,
+      "lng": 52.028333,
+      "source": "https://ru.wikipedia.org/wiki/Великовисочное"
+    },
+    {
+      "name": "Верхняя Пеша",
+      "lat": 66.609722,
+      "lng": 47.962222,
+      "source": "https://ru.wikipedia.org/wiki/Верхняя_Пеша"
+    },
+    {
+      "name": "Вижас",
+      "lat": 66.640833,
+      "lng": 45.886667,
+      "source": "https://ru.wikipedia.org/wiki/Вижас_(деревня)"
+    },
+    {
+      "name": "Волоковая",
+      "lat": 66.483611,
+      "lng": 48.243889,
+      "source": "https://ru.wikipedia.org/wiki/Волоковая_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Волонга",
+      "lat": 67.131389,
+      "lng": 47.776111,
+      "source": "https://ru.wikipedia.org/wiki/Волонга_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Выучейский",
+      "lat": 67.568889,
+      "lng": 49.058333,
+      "source": "https://ru.wikipedia.org/wiki/Выучейский_(посёлок)"
+    },
+    {
+      "name": "Индига",
+      "lat": 67.658333,
+      "lng": 49.016389,
+      "source": "https://ru.wikipedia.org/wiki/Индига_(посёлок)"
+    },
+    {
+      "name": "Искателей",
+      "lat": 67.666667,
+      "lng": 53.133333,
+      "source": "https://ru.wikipedia.org/wiki/Посёлок_Искателей"
+    },
+    {
+      "name": "Каменка",
+      "lat": 67.4875,
+      "lng": 51.883056,
+      "source": "https://ru.wikipedia.org/wiki/Каменка_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Каратайка",
+      "lat": 68.761667,
+      "lng": 61.409722,
+      "source": "https://ru.wikipedia.org/wiki/Каратайка"
+    },
+    {
+      "name": "Кия",
+      "lat": 67.650833,
+      "lng": 44.099167,
+      "source": "https://ru.wikipedia.org/wiki/Кия_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Коткино",
+      "lat": 67.030833,
+      "lng": 51.136111,
+      "source": "https://ru.wikipedia.org/wiki/Коткино"
+    },
+    {
+      "name": "Красное",
+      "lat": 67.835556,
+      "lng": 53.596944,
+      "source": "https://ru.wikipedia.org/wiki/Красное_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Куя",
+      "lat": 67.771389,
+      "lng": 53.262778,
+      "source": "https://ru.wikipedia.org/wiki/Куя_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Лабожское",
+      "lat": 67.3325,
+      "lng": 52.095,
+      "source": "https://ru.wikipedia.org/wiki/Лабожское"
+    },
+    {
+      "name": "Макарово",
+      "lat": 67.683056,
+      "lng": 52.874444,
+      "source": "https://ru.wikipedia.org/wiki/Макарово_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Мгла",
+      "lat": 66.498056,
+      "lng": 44.447222,
+      "source": "https://ru.wikipedia.org/wiki/Мгла_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Нельмин-Нос",
+      "lat": 67.981389,
+      "lng": 52.955556,
+      "source": "https://ru.wikipedia.org/wiki/Нельмин-Нос"
+    },
+    {
+      "name": "Несь",
+      "lat": 66.601667,
+      "lng": 44.675833,
+      "source": "https://ru.wikipedia.org/wiki/Несь_(село)"
+    },
+    {
+      "name": "Нижняя Пеша",
+      "lat": 66.751944,
+      "lng": 47.755833,
+      "source": "https://ru.wikipedia.org/wiki/Нижняя_Пеша"
+    },
+    {
+      "name": "Оксино",
+      "lat": 67.583611,
+      "lng": 52.1775,
+      "source": "https://ru.wikipedia.org/wiki/Оксино_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Ома",
+      "lat": 66.6425,
+      "lng": 46.492222,
+      "source": "https://ru.wikipedia.org/wiki/Ома_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Осколково",
+      "lat": 67.954167,
+      "lng": 53.740556,
+      "source": "https://ru.wikipedia.org/wiki/Осколково_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Пылемец",
+      "lat": 67.410556,
+      "lng": 52.257222,
+      "source": "https://ru.wikipedia.org/wiki/Пылемец"
+    },
+    {
+      "name": "Снопа",
+      "lat": 66.74,
+      "lng": 47.016944,
+      "source": "https://ru.wikipedia.org/wiki/Снопа_(деревня)"
+    },
+    {
+      "name": "Тельвиска",
+      "lat": 67.633889,
+      "lng": 52.882222,
+      "source": "https://ru.wikipedia.org/wiki/Тельвиска"
+    },
+    {
+      "name": "Тошвиска",
+      "lat": 67.122778,
+      "lng": 52.299444,
+      "source": "https://ru.wikipedia.org/wiki/Тошвиска"
+    },
+    {
+      "name": "Усть-Кара",
+      "lat": 69.244444,
+      "lng": 64.920278,
+      "source": "https://ru.wikipedia.org/wiki/Усть-Кара"
+    },
+    {
+      "name": "Устье",
+      "lat": 67.569722,
+      "lng": 52.594722,
+      "source": "https://ru.wikipedia.org/wiki/Устье_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Харута",
+      "lat": 66.827222,
+      "lng": 59.656111,
+      "source": "https://ru.wikipedia.org/wiki/Харута_(посёлок)"
+    },
+    {
+      "name": "Харьягинский",
+      "lat": 67.214167,
+      "lng": 56.774722,
+      "source": "https://ru.wikipedia.org/wiki/Харьягинский"
+    },
+    {
+      "name": "Хонгурей",
+      "lat": 67.556944,
+      "lng": 51.951389,
+      "source": "https://ru.wikipedia.org/wiki/Хонгурей"
+    },
+    {
+      "name": "Хорей-Вер",
+      "lat": 67.415833,
+      "lng": 58.041111,
+      "source": "https://ru.wikipedia.org/wiki/Хорей-Вер"
+    },
+    {
+      "name": "Чёрная",
+      "lat": 68.586944,
+      "lng": 56.581389,
+      "source": "https://ru.wikipedia.org/wiki/Чёрная_(Ненецкий_автономный_округ)"
+    },
+    {
+      "name": "Чижа",
+      "lat": 67.0875,
+      "lng": 44.383056,
+      "source": "https://ru.wikipedia.org/wiki/Чижа_(деревня)"
+    },
+    {
+      "name": "Шойна",
+      "lat": 67.878056,
+      "lng": 44.1525,
+      "source": "https://ru.wikipedia.org/wiki/Шойна_(село)"
+    },
+    {
+      "name": "Щелино",
+      "lat": 67.121667,
+      "lng": 52.034167,
+      "source": "https://ru.wikipedia.org/wiki/Щелино_(Ненецкий_автономный_округ)"
+    }
+  ]
+}
